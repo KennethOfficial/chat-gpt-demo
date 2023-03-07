@@ -251,3 +251,9 @@ span.message {
   line-height: 18px;
   color: var(--mediumGrey-color);
 }
+
+.placeholder {
+  justify-content: center;
+  align-items: center;
+  color: var(--mediumPurple-color);
+}

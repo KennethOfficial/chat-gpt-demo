@@ -17,10 +17,12 @@ const Home = () => {
   return (
     <div className="flex-row home">
       <ContactList contacts={contacts} onContactSelect={handleContactSelect} />
-      {selectedContact && (
-        <>
-          <Chat selectedContact={selectedContact} />
-        </>
+      {selectedContact ? (
+        <Chat selectedContact={selectedContact} />
+      ) : (
+        <div className="flex-column chatbot placeholder">
+          <span>Select an expert to begin the chat</span>
+        </div>
       )}
     </div>
   );
